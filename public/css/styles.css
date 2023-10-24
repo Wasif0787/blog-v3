@@ -133,3 +133,90 @@
 .social-icon img:hover {
     transform: scale(1.2);
 }
+
+
+/* Your existing CSS styles */
+
+/* Style for the post container */
+.post-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for comment section */
+.comment-section {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for comment list */
+.comment-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style for each comment */
+.comment {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* Style for comment author */
+.comment-author {
+    font-weight: bold;
+}
+
+/* Style for comment timestamp */
+.comment-timestamp {
+    font-style: italic;
+}
+
+/* Style for the comment form container */
+.comment-form {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form group (name and comment) */
+.form-group {
+    margin-bottom: 10px;
+}
+
+/* Style for form input and textarea */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+/* Style for submit button */
+.submit-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Add your existing styles here */

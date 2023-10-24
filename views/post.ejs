@@ -1,6 +1,45 @@
 <%- include("partials/header.ejs") %>
 
-<h1><%= postTitle %> </h1>
-<p><%= postBody %> </p>
+<div class="post-container">
+  <h1>
+    <%= postTitle %>
+  </h1>
+  <h3>Written by - <%= postUser %>
+  </h3>
+  <p>
+    <%= postBody %>
+  </p>
+</div>
+
+<div class="comment-section">
+  <h3>Comments:</h3>
+  <ul class="comment-list">
+    <% comments.forEach(function(comment) { %>
+    <li class="comment">
+      <p class="comment-author">
+        <%= comment.author %>:
+      </p>
+      <p class="comment-text">
+        <%= comment.text %>
+      </p>
+    </li>
+    <% }); %>
+  </ul>
+</div>
+
+<div class="comment-form">
+  <h3>Add a Comment:</h3>
+  <form action="/posts/<%= postID %>/comments" method="POST">
+    <div class="form-group">
+      <label for="comment-author">Your Name:</label>
+      <input type="text" id="comment-author" name="commentAuthor" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+      <label for="comment-text">Your Comment:</label>
+      <textarea id="comment-text" name="comment" placeholder="Add a comment" required></textarea>
+    </div>
+    <button class="submit-button" type="submit">Submit Comment</button>
+  </form>
+</div>
 
 <%- include("partials/footer.ejs") %>
