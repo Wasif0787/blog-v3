@@ -220,3 +220,37 @@ textarea {
 }
 
 /* Add your existing styles here */
+/* For screens with a maximum width of 600px (typical for mobile devices) */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .navbar {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav li {
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        position: static;
+        text-align: center;
+        height: auto;
+        background-color: #1abc9c;
+    }
+
+    .footer p {
+        margin-top: 10px;
+        font-size: 10px;
+    }
+
+    /* Add more responsive styles as needed */
+}

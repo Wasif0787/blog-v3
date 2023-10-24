@@ -18,10 +18,10 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-const password = encodeURIComponent("#Wasif#blogv2786#");
+const password = encodeURIComponent("wasifblogv3");
 mongoose
   .connect(
-    `mongodb+srv://wasifhussain787:${password}@blogv2.dae83ee.mongodb.net/blogDB`
+    `mongodb+srv://wasifhussain787:${password}@blogv3.7hndafs.mongodb.net/blogDB`
   )
   .then(() => {
     console.log("Connected successfylly");
